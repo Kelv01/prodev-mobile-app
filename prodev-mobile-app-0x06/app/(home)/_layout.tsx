@@ -12,13 +12,13 @@ const HomeRootLayout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: "#34967C",
-        headerShown: false,
       }}
     >
       <Tabs.Screen
         name="index"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: ({ color }) => (
             <AntDesign name="home" size={24} color={color} />
           ),
@@ -58,7 +58,7 @@ const HomeRootLayout = () => {
         name="profile"
         options={{
           title: "Profile",
-          headerShown: true,
+
           tabBarIcon: ({ color }) => (
             <FontAwesome name="user-o" size={24} color="black" />
           ),
